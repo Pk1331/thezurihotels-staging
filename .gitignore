@@ -20,15 +20,7 @@
 /.github
 
 # Build artifacts in public directory (causing micromatch recursion)
-/public/**/*.js
-/public/**/*_files/
-/public/**/webpack.js
-/public/**/main.js
-/public/**/react-refresh.js
-/public/**/polyfills.js
-/public/**/_app.js
-/public/**/_buildManifest.js
-/public/**/_ssgManifest.js
+/public/bengaluru/about-bengaluru/hotels-in-bengaluru_files/
 
 # Miscellaneous
 .DS_Store

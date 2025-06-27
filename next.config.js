@@ -16,17 +16,11 @@ const nextConfig = {
     // experimental: {
     //     optimizeCss: true,
     // },
-    webpack: (config, { isServer }) => {
-        // Exclude problematic files from build
-        config.watchOptions = {
-            ignored: [
-                '**/public/**/*.js',
-                '**/public/**/*_files/**',
-                '**/public/bengaluru/about-bengaluru/hotels-in-bengaluru_files/**'
-            ]
-        };
-        
-        return config;
+    experimental: {
+        // Increase memory limit for build process
+        memoryBasedWorkers: true,
+        // Optimize build trace collection
+        optimizePackageImports: ['react', 'react-dom'],
     },
     async headers() {
         return [

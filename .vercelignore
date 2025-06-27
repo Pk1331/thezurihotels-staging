@@ -1,26 +1,2 @@
-# Build artifacts in public directory (causing micromatch recursion)
-public/**/*.js
-public/**/*_files/
-public/**/webpack.js
-public/**/main.js
-public/**/react-refresh.js
-public/**/polyfills.js
-public/**/_app.js
-public/**/_buildManifest.js
-public/**/_ssgManifest.js
-
-# Large image files that might cause issues
-public/**/*.jpg
-public/**/*.jpeg
-public/**/*.png
-public/**/*.gif
-public/**/*.webp
-
-# Keep only essential public files
-!public/favicon.ico
-!public/robots.txt
-!public/sitemap.xml
-!public/zuri_logo.png
-
-# Specific problematic directories
+# Exclude problematic build artifacts that cause micromatch recursion
 public/bengaluru/about-bengaluru/hotels-in-bengaluru_files/ 
