@@ -17,6 +17,8 @@
 /public/sitemap.xml
 /sitemap.xml
 
+/.github
+
 # Build artifacts in public directory (causing micromatch recursion)
 /public/**/*.js
 /public/**/*_files/
