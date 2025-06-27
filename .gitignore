@@ -19,9 +19,6 @@
 
 /.github
 
-# Build artifacts in public directory (causing micromatch recursion)
-/public/bengaluru/about-bengaluru/hotels-in-bengaluru_files/
-
 # Miscellaneous
 .DS_Store
 *.pem
