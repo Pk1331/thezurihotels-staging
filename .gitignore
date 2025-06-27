@@ -17,6 +17,17 @@
 /public/sitemap.xml
 /sitemap.xml
 
+# Build artifacts in public directory (causing micromatch recursion)
+/public/**/*.js
+/public/**/*_files/
+/public/**/webpack.js
+/public/**/main.js
+/public/**/react-refresh.js
+/public/**/polyfills.js
+/public/**/_app.js
+/public/**/_buildManifest.js
+/public/**/_ssgManifest.js
+
 # Miscellaneous
 .DS_Store
 *.pem

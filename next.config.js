@@ -16,6 +16,18 @@ const nextConfig = {
     // experimental: {
     //     optimizeCss: true,
     // },
+    webpack: (config, { isServer }) => {
+        // Exclude problematic files from build
+        config.watchOptions = {
+            ignored: [
+                '**/public/**/*.js',
+                '**/public/**/*_files/**',
+                '**/public/bengaluru/about-bengaluru/hotels-in-bengaluru_files/**'
+            ]
+        };
+        
+        return config;
+    },
     async headers() {
         return [
             {
