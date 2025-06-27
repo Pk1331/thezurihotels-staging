@@ -36,11 +36,6 @@ const nextConfig = {
                 destination: '/offers/stay-offers',
                 permanent: true, // Set to true if the redirect is permanent, else false
             },
-            {
-                source: '/christmas-new-year-offers',
-                destination: '/offers/stay-offers',
-                permanent: true, // Set to true if the redirect is permanent, else false
-            },
         ];
     },
 };
